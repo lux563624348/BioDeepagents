@@ -1,5 +1,7 @@
 # BioDeepagents CLI
 
+[![PyPI](https://img.shields.io/pypi/v/BioDeep?label=BioDeep&logo=pypi&logoColor=white)](https://pypi.org/project/BioDeep/)
+
 ## PyPI Package
 
 The `BioDeep` package ships the bioinformatics skill bundle so you can manage and distribute skills via PyPI.
@@ -17,6 +19,11 @@ The package includes:
 
 ## Skills
 
+Upstream skill sources and datasets:
+- [claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)
+- [ClawBio](https://github.com/ClawBio/ClawBio)
+- [Indexd Skills Datasets](https://agent.indexd.org/skills-datasets)
+
 Skills are sourced from BioClaw. The following skills are sourced from claude-scientific-skills:
 - Bioinformatics & Genomics
 - Sequence Analysis: Process DNA/RNA/protein sequences with BioPython and pysam
@@ -29,20 +36,7 @@ Skills are sourced from BioClaw. The following skills are sourced from claude-sc
 | Skill | Description |
 | --- | --- |
 | [bio-orchestrator](skills/bio-orchestrator/SKILL.md) | Meta-agent that routes bioinformatics requests to specialised sub-skills. Handles file type detection, analysis planning, report generation, and reproducibility export. |
-| [claw-ancestry-pca](skills/claw-ancestry-pca/SKILL.md) | Ancestry decomposition PCA against the Simons Genome Diversity Project. |
-| [claw-metagenomics](skills/claw-metagenomics/SKILL.md) | Shotgun metagenomics profiling — taxonomy, resistome, and functional pathways. |
-| [claw-semantic-sim](skills/claw-semantic-sim/SKILL.md) | Semantic Similarity Index for disease research literature using PubMedBERT embeddings. |
-| [drug-photo](skills/drug-photo/SKILL.md) | Photo of a medication to get pharmacogenomic dosage guidance via a CPIC single-drug lookup. |
-| [equity-scorer](skills/equity-scorer/SKILL.md) | Compute HEIM diversity and equity metrics from VCF or ancestry data. Generates heterozygosity, FST, PCA plots, and a composite HEIM Equity Score with markdown reports. |
-| [genome-compare](skills/genome-compare/SKILL.md) | Compare your genome to George Church (PGP-1) and estimate ancestry composition. |
-| [labstep](skills/labstep/SKILL.md) | Interact with the Labstep electronic lab notebook API using labstepPy. Query experiments, protocols, resources, inventory, and other lab entities. |
-| [lit-synthesizer](skills/lit-synthesizer/SKILL.md) | Search PubMed and bioRxiv, summarise papers with LLM, build citation graphs, and generate literature review sections. |
-| [nutrigx-advisor](skills/nutrigx_advisor/SKILL.md) | Personalised nutrition report from genetic data (23andMe, AncestryDNA, or VCF). |
-| [pharmgx-reporter](skills/pharmgx-reporter/SKILL.md) | Pharmacogenomic report from DTC genetic data (23andMe/AncestryDNA). |
-| [repro-enforcer](skills/repro-enforcer/SKILL.md) | Export any bioinformatics analysis as a reproducible bundle with Conda environment, Singularity container definition, and Nextflow pipeline. |
-| [scrna-orchestrator](skills/scrna-orchestrator/SKILL.md) | Automate single-cell RNA-seq analysis with Scanpy or Seurat. QC, normalisation, clustering, DE analysis, and visualisation. |
-| [seq-wrangler](skills/seq-wrangler/SKILL.md) | Sequence QC, alignment, and BAM processing. Wraps FastQC, BWA/Bowtie2, SAMtools for automated read-to-BAM pipelines. |
-| [struct-predictor](skills/struct-predictor/SKILL.md) | Local protein structure prediction with AlphaFold, Boltz, or Chai. Compare predicted structures, compute RMSD, visualise 3D models. |
+...
 | [vcf-annotator](skills/vcf-annotator/SKILL.md) | Annotate VCF variants with VEP, ClinVar, gnomAD frequencies, and ancestry-aware context. Generates prioritised variant reports. |
 
 This project is basing on [deepagents](https://github.com/langchain-ai/deepagents) CLI, an open source coding assistant that runs in your terminal, similar to Claude Code.
