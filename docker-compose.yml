@@ -1,0 +1,13 @@
+services:
+  biodeep-cli:
+    build: .
+    container_name: biodeep-cli
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./biodeep:/workspace/biodeep
+    environment:
+      UV_VENV: /workspace/biodeep/.venv
+    env_file:
+      - ./.env
+    restart: unless-stopped

@@ -1,0 +1,4 @@
+# DeepAgents configuration
+# Set a default model by uncommenting and filling in a model id, e.g.
+# [models]
+# default = "anthropic:claude-sonnet-4-5"
