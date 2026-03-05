@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "skillsmp-search": {
+      "source": "koryaga/persona",
+      "sourceType": "github",
+      "computedHash": "a665a3725abc276e016dea6f6c7c7469587dd055ad03a4525b5094d896cb71e2"
+    }
+  }
+}

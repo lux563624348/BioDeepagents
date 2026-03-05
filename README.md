@@ -41,6 +41,13 @@ Skills are sourced from BioClaw. The following skills are sourced from claude-sc
 
 This project is basing on [deepagents](https://github.com/langchain-ai/deepagents) CLI, an open source coding assistant that runs in your terminal, similar to Claude Code.
 
+## Verified K-Dense Skills (146 total)
+- `iso-13485-certification` (author: K-Dense Inc.) – comprehensive ISO 13485:2016 QMS guidance with gap analysis tooling, clause-by-clause references, and templates for Quality Manuals, procedures, and Medical Device Files so teams can assess readiness and build compliant documentation.
+
+| Skills Source | Verified # | Total # | Verification Methods |
+| --- | --- | --- | --- |
+| `claude-scientific-skills` (K-Dense Inc.) | 146 | 147 (total skills in `skills/`) | Metadata-driven audit: only `SKILL.md` files with `skill-author: K-Dense Inc.` are promoted from `skills_unverified/claude-scientific-skills/` into `skills/`, ensuring each verified skill is explicitly claimed by the author. |
+
 *Key Features:**
 - **Built-in Tools**: File operations (read, write, edit, glob, grep), shell commands, web search, and subagent delegation
 - **Customizable Skills**: Add domain-specific capabilities through a progressive disclosure skill system
