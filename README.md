@@ -13,9 +13,30 @@ python3 -m pip install openbioskill
 ```
 
 The package includes:
-- The `OpenBio` Python package
-- Bundled bioinformatics skills under `OpenBio/skills`
-- A console entry point: `deepagents`
+- Bundled bioinformatics skills under `skills/`
+- A console entry point: `openbio`
+
+Install the bundled skills to the default model path (`~/.claude/skills`):
+
+```bash
+openbio install
+```
+
+`openbio install` auto-detects these targets (in order) when no flags are passed:
+- Cursor: `~/.cursor/skills`
+- Claude Code: `~/.claude/skills`
+- Codex: `~/.codex/skills`
+- Gemini CLI: `~/.gemini/skills`
+- Deepagents CLI: `~/.deepagents/skills`
+
+If none are detected, it falls back to `~/.claude/skills`.
+
+Install to a different model path:
+
+```bash
+openbio install --model-name codex
+openbio install --model-name deepagents-cli
+```
 
 ## Skills
 
