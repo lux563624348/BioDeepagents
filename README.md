@@ -1,5 +1,10 @@
-# BioDeepagents CLI
+# OpenBio CLI
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Skills](https://img.shields.io/badge/Skills-150-brightgreen.svg)](#whats-included)
+[![Databases](https://img.shields.io/badge/Databases-200%2B-orange.svg)](#whats-included)
+[![Agent Skills](https://img.shields.io/badge/Standard-Agent_Skills-blueviolet.svg)](https://agentskills.io/)
+[![Works with](https://img.shields.io/badge/Works_with-Deepagents_|_Claude_Code_|_Codex_|Gemini-blue.svg)](#getting-started)
 [![PyPI](https://img.shields.io/pypi/v/openbioskill?label=openbioskill&logo=pypi&logoColor=white)](https://pypi.org/project/openbioskill/)
 
 ## PyPI Package
