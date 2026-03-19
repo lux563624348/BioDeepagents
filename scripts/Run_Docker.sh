@@ -1,4 +1,10 @@
-docker run --rm -it -p 8000:8000 -v "$(pwd)/workspace/:/workspace/project" --env-file ./.env deepagents-cli
+# Build the container image (ensures the local Dockerfile changes are applied).
+IMAGE_NAME=openbio-cli
+PORT=8888
 
-#docker build -f ./Dockerfile -t deepagents-cli .
-#docker compose run --rm --service-ports --build flask-app
+docker build -t "$IMAGE_NAME" .
+
+docker run --rm -it -p "${PORT}:${PORT}" -v "$(pwd):/workspace/openbio" --env-file ./.env "$IMAGE_NAME"
+
+# Alternative (docker compose):
+# docker compose run --rm --service-ports --build openbio-cli

@@ -1,13 +1,13 @@
 services:
-  biodeep-cli:
+  openbio-cli:
     build: .
-    container_name: biodeep-cli
+    container_name: openbio-cli
     ports:
       - "8888:8888"
     volumes:
-      - ./biodeep:/workspace/biodeep
+      - .:/workspace/openbio
     environment:
-      UV_VENV: /workspace/biodeep/.venv
+      UV_VENV: /workspace/cli/.venv
     env_file:
       - ./.env
     restart: unless-stopped

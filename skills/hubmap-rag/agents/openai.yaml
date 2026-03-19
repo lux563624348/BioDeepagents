@@ -1,0 +1,4 @@
+interface:
+  display_name: "HuBMAP RAG"
+  short_description: "RAG over HuBMAP PDFs via FAISS search"
+  default_prompt: "Use $hubmap-rag to index and search HuBMAP PDFs with FAISS and OpenAI embeddings."
